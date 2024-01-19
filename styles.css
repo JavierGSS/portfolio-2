@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(232, 250, 199) !important;
+  margin: 0px;
+}
+
+#main-header {
+  margin-top: -1%;
+  font-family: Monoton, cursive;
+  margin-left: 5%;
+  margin-top: 2%;
+  font-size: 3.8vw;
+  color: rgb(148, 151, 155);
+}
+
+.h1 {
+  font-family: Titan One, cursive;
+  padding-left: 2%;
+  object-fit: contain;
+  display: flex;
+}
+
+.animate-character {
+  background-image: linear-gradient(
+    -225deg,
+    #fff800 0%,
+    #be0000 33%,
+    #f68c22 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  font-family: Monoton, cursive;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.fancy {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: url("./pics/green.jpg");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+#home-content {
+  padding-left: 5%;
+  position: relative;
+  clear: both;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin-right: 1%;
+  align-items: center;
+  gap: 1rem;
+}
+
+#portrait {
+  background-position: cover;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  height: 68%;
+  width: 68%;
+  margin-left: 12%;
+  margin-top: 10%;
+  margin-right: 3%;
+  border: 0.3px;
+  border-style: solid;
+  border-radius: 20%;
+}
+
+p {
+  font-family: Titan one, cursive;
+  font-size: large;
+  padding: 3%;
+  align-items: justify;
+}
+
+.about-me {
+  background-image: url("./pics/about-me.jpg");
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
