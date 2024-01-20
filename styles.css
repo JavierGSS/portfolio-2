@@ -81,9 +81,12 @@ body {
   margin-left: 12%;
   margin-top: 10%;
   margin-right: 3%;
-  border: 0.3px;
-  border-style: solid;
-  border-radius: 20%;
+  --s: 0.5vw; /* control the size */
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 0.5px 0.5px, #0000 25%, #000 0);
+  border-radius: 1%;
 }
 
 p {
