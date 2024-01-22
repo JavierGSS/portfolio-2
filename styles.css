@@ -3,6 +3,11 @@ body {
   margin: 0px;
 }
 
+#horizontal-image {
+  width: 100vw;
+  height: 35vh;
+}
+
 #main-header {
   margin-top: -1%;
   font-family: Monoton, cursive;
