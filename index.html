@@ -6,6 +6,10 @@
     <title>SALCEDO</title>
     <link rel="icon" type="image/png" href="./pics/icon.png" />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;700&family=Monoton&display=swap;&family=Titan+One&");
     </style>
@@ -24,6 +28,7 @@
       type="text/css"
     />
   </head>
+
   <body>
     <!-- Navbar -->
     <nav
@@ -32,7 +37,7 @@
     >
       <div
         class="container-fluid"
-        style="font-size: 22px; font-family: Dosis, sans-serif"
+        style="font-size: 1.3vw; font-family: Dosis, sans-serif"
       >
         <a
           class="navbar-brand"
@@ -73,7 +78,7 @@
             </li>
             <li class="nav-item dropdown"></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -83,19 +88,9 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Links de interés
+                Contacto
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    target="_blank"
-                    href="./docs/CV JGS English.pdf"
-                    download="CV"
-                    >CV</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
                     class="dropdown-item"
@@ -104,22 +99,29 @@
                     >GitHub</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    target="_blank"
-                    href="https://blogs.elespectador.com/author/latortugayelpatonejo"
-                    >Blog El Espectador</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
                     class="dropdown-item"
                     target="_blank"
                     href="https://www.instagram.com/misterbabalu/?hl=es-la"
                     >Insta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="https://blogs.elespectador.com/author/latortugayelpatonejo"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="./docs/CV JGS English.pdf"
+                    download="CV"
+                    >CV</a
                   >
                 </li>
               </ul>
@@ -130,9 +132,16 @@
               class="form-control me-2"
               type="search"
               placeholder="Search"
+              style="font-size: 1.3vw"
               aria-label="Search"
             />
-            <button class="btn btn-outline-dark" type="submit">Search</button>
+            <button
+              class="btn btn-outline-dark"
+              style="font-size: 1.3vw"
+              type="submit"
+            >
+              Go
+            </button>
           </form>
         </div>
       </div>
@@ -148,7 +157,7 @@
           <br />
           <h1
             class="h1"
-            style="font-size: 3vw; margin-top: 1vw; color: rgb(79, 81, 91)"
+            style="font-size: 3vw; margin-top: 2vh; color: rgb(79, 81, 91)"
           >
             <span class="fancy">Hola, soy</span>
           </h1>
@@ -159,7 +168,7 @@
             style="
               display: inline;
               margin-left: 6%;
-              margin-top: 0.7vw;
+              margin-top: 0.5vh;
               font-size: 3.2vw;
               color: rgb(0, 0, 0);
             "
@@ -167,7 +176,7 @@
             <span class="fancy">Desarrollador&nbsp;</span>
           </h1>
           <h1
-            style="font-size: 3.6vw; margin-top: 0.7vw"
+            style="font-size: 3.6vw; margin-top: 0.8vh"
             class="animate-character"
           >
             full-stack
@@ -177,7 +186,6 @@
           <img id="portrait" src="./pics/main-pic.jpg" />
         </div>
       </div>
-      <br />
       <br />
       <br />
     </section>
@@ -192,22 +200,256 @@
           font-size: 1.4vw;
           color: rgb(86, 87, 88);
           padding-top: 2%;
-          margin-top: 10%;
-          margin-bottom: 10%;
+          margin-top: 4vw;
+          margin-bottom: 3vw;
         "
       >
         <div align="center" style="border-bottom: dotted; margin-bottom: 1vw">
           Bio
         </div>
         <br />
-        Soy un desarrollador full-stack con un background en filosofía y lógica
-        matemática. En 2024 obtuve mi certificación de MIT/xPRO como programador
-        especializado en el stack MERN. Actualmente desarrollo productos
-        intuitivos que cifran un beneficio para mis clientes y la comunidad de
-        usuarixs de sus servicios.
+        <div
+          style="
+            margin: 0;
+            display: flex;
+            align-items: justify;
+            justify-content: center;
+          "
+        >
+          Soy un desarrollador full-stack con un background en filosofía y
+          lógica matemática. En 2024 obtuve mi certificación de MIT/xPRO como
+          programador especializado en el stack MERN. Actualmente desarrollo
+          productos intuitivos que cifran un beneficio para mis clientes y la
+          comunidad de usuarixs de sus servicios.
+        </div>
+        <div></div>
       </div>
       <div></div>
+      <div></div>
+
+      <!-- attribute style-x is style but commented out-->
+      <div
+        class="iframe-container"
+        id="video"
+        style_x="
+          display: flex;
+          --s: 0.5vw; /* control the size */
+          padding: var(--s);
+          border: calc(2 * var(--s)) solid #0000;
+          outline-offset: calc(-1 * var(--s));
+          background: conic-gradient(
+            from 90deg at 0.5px 0.5px,
+            #0000 25%,
+            #000 0
+          );
+        "
+      >
+        >
+        <iframe
+          width="650"
+          height="350"
+          src="https://www.youtube.com/embed/zhFNJnv3DU4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div></div>
+      <div style="margin-bottom: 5%"></div>
     </section>
+
+    <!-- Projects -->
+
+    <section class="projects" id="projects">
+      <div class="projects-description">
+        <div></div>
+        <div
+          align="justify"
+          style="
+            font-family: Dosis, sans-serif;
+            font-size: 1.4vw;
+            color: rgb(86, 87, 88);
+            padding-top: 2%;
+            margin-top: 4vw;
+            margin-bottom: 1.5vw;
+          "
+        >
+          <div align="center" style="border-bottom: dotted; margin-bottom: 1vw">
+            Proyectos
+          </div>
+          <br />
+          <p
+            style="
+              margin: 0;
+              display: contents;
+              align-items: justify;
+              justify-content: center;
+            "
+          >
+            Los siguientes son algunos de los proyectos que realicé en el marco
+            de mi certificación como programador full-stack con MIT/xPRO. Si
+            quieres conocer más proyectos de mi autoría, puedes dirigirte a mi
+            cuenta en
+            <a href="https://www.github.com/JavierGSS" target="_blank">GitHub</a
+            >:
+          </p>
+        </div>
+        <div></div>
+      </div>
+      <br />
+      <section class="cards">
+        <div class="bg-success p-2 bg-opacity-10">
+          <img
+            class="card-img-top"
+            src="pics/Pacman.png"
+            height="auto"
+            width="auto"
+            style="
+              content: '';
+              border: solid 0.5px rgb(163, 169, 175);
+              object-fit: scale-down;
+            "
+            alt="Card image cap"
+          />
+
+          <div class="card-body">
+            <br />
+            <h3
+              style="
+                text-align: center;
+                height: auto;
+                font-family: Dosis, sans-serif;
+                font-size: 2vw;
+              "
+            >
+              <strong>PacMen Exercise</strong>
+            </h3>
+            <p
+              class="card-text text-center bg-opacity-10"
+              style="font-family: Dosis, sans-serif; font-size: 1vw"
+            >
+              Tú decides cuántos PacMen circularán aleatoriamente alrededor de
+              tu pantalla.<br /><br />
+              <a
+                target="_blank"
+                href="https://github.com/JavierGSS/PacMen-Exercise"
+                ><strong>Repo</strong></a
+              >&emsp;&emsp;&emsp;&ensp;
+              <a
+                target="_blank"
+                href="https://javiergss.github.io/PacMen-Exercise/"
+                ><strong>Deployment</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-success p-2 text-dark bg-opacity-10">
+          <img
+            class="card-img-top"
+            src="pics/eyes.png"
+            height="auto"
+            style="content: ''; border: solid 0.5px rgb(163, 169, 175)"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <br />
+            <h3
+              style="
+                text-align: center;
+                height: auto;
+                font-family: Dosis, sans-serif;
+                font-size: 2vw;
+              "
+            >
+              <strong>Eye Exercise</strong>
+            </h3>
+            <p
+              class="card-text text-center bg-opacity-10"
+              style="font-family: Dosis, sans-serif; font-size: 1vw"
+            >
+              Trumpty Dumpty no te quita la mirada de encima. Cuídate del mal de
+              ojo &#128064;! <br /><br />
+              <a
+                target="_blank"
+                href="https://github.com/JavierGSS/Eye-exercise"
+                ><strong>Repo</strong></a
+              >&emsp;&emsp;&emsp;&ensp;
+              <a
+                target="_blank"
+                href="https://javiergss.github.io/Eye-exercise/"
+                ><strong>Deployment</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-success p-2 text-dark bg-opacity-10">
+          <img
+            class="card-img-top"
+            src="pics/bus.png"
+            height="auto"
+            style="content: ''; border: solid 0.5px rgb(163, 169, 175)"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <br />
+            <h3
+              style="
+                text-align: center;
+                height: auto;
+                font-family: Dosis, sans-serif;
+                font-size: 2vw;
+              "
+            >
+              <strong>Real Time Bus Tracker</strong>
+            </h3>
+            <p
+              class="card-text text-center bg-opacity-10"
+              style="font-family: Dosis, sans-serif; font-size: 1vw"
+            >
+              Conoce las estaciones que conectan MIT y Harvard vía Massachussets
+              Avenue. <br /><br />
+              <a
+                target="_blank"
+                href="https://github.com/JavierGSS/Real-Time-Bus-Tracker"
+                ><strong>Repo</strong></a
+              >&emsp;&emsp;&emsp;&ensp;
+              <a
+                target="_blank"
+                href="https://javiergss.github.io/Real-Time-Bus-Tracker/"
+                ><strong>Deployment</strong></a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div style="text-align: center">
+        <a href="https://github.com/JavierGSS" target="_blank" class="a-footer"
+          ><i class="fa fa-github"></i
+        ></a>
+      </div>
+      <div style="text-align: center">
+        © 2024 Diseñado y construido con &#9829; por
+        <a style="color: rgb(86, 87, 88)" href="mailto:jagasal@icloud.com"
+          >JavierGSS</a
+        >
+      </div>
+      <div style="text-align: center">
+        <a
+          href="https://www.instagram.com/misterbabalu/"
+          target="_blank"
+          class="a-footer"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

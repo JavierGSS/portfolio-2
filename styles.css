@@ -1,11 +1,21 @@
 body {
-  background-color: rgb(232, 250, 199) !important;
-  margin: 0px;
+  min-height: 100%;
+  background: linear-gradient(
+      -1deg,
+      rgba(190, 221, 133, 0.6),
+      rgba(231, 246, 203, 0.9),
+      rgba(190, 221, 133, 0.6)
+    ),
+    url(./pics/noisy.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 #horizontal-image {
   width: 100vw;
-  height: 35vh;
+  height: 30vh;
+  max-height: max-content;
 }
 
 #main-header {
@@ -81,27 +91,137 @@ body {
   object-fit: contain;
   display: flex;
   align-items: center;
-  height: 68%;
-  width: 68%;
-  margin-left: 12%;
+  height: 90%;
+  width: 90%;
   margin-top: 10%;
-  margin-right: 3%;
-  --s: 0.5vw; /* control the size */
+  --s: 0.7vw; /* control the size */
   padding: var(--s);
   border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid rgb(148, 151, 155);
   outline-offset: calc(-1 * var(--s));
-  background: conic-gradient(from 90deg at 0.5px 0.5px, #0000 25%, #000 0);
-}
-
-p {
-  font-family: Titan one, cursive;
-  font-size: large;
-  padding: 3%;
-  align-items: justify;
+  background: conic-gradient(
+    from 90deg at 1px 1px,
+    #0000 25%,
+    rgb(148, 151, 155) 0
+  );
+  border-radius: 2.5%;
 }
 
 .about-me {
   background-image: url("./pics/about-me.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  /* las siguientes 3 reglas controlan el escalamiento del iframe pero entran en conflicto con el marco art déco definido en #portrait */
+}
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+
+.neonText {
+  color: #b6b2b2;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(237, 240, 94), 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
+.projects-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-anchor: inherit;
+}
+
+.projects-description a {
+  color: #5f7e69;
+  position: relative;
+  text-decoration: none;
+}
+
+.projects-description a:visited {
+  color: rgb(204, 154, 191);
+}
+
+/* anchor effect */
+.projects-description a::before {
+  background: hsl(45, 88%, 73%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.projects-description a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+  gap: 5%;
+}
+
+/* hover effect on cards */
+.bg-success:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.bg-success a {
+  color: rgb(127, 137, 126);
+}
+
+.bg-success a:visited {
+  color: rgb(204, 154, 191);
+}
+
+footer {
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
+  justify-content: center;
+  padding-bottom: 0.5%;
+  background-color: rgb(255, 255, 255, 0.4);
+  color: rgb(86, 87, 88);
+  font-family: Dosis, sans-serif;
+  font-size: 0.9vw;
+}
+
+.fa {
+  font-size: 0.8vw;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.a-footer {
+  color: rgb(86, 87, 88);
 }
