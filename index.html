@@ -33,7 +33,7 @@
     <!-- Navbar -->
     <nav
       class="navbar sticky-top navbar-expand-lg py-0 navbar-light"
-      style="background-color: rgb(244, 229, 208)"
+      style="background-color: rgba(244, 229, 208, 0.85)"
     >
       <div
         class="container-fluid"
@@ -42,7 +42,7 @@
         <a
           class="navbar-brand"
           style="
-            font-size: 24px;
+            font-size: calc(18px + 0.4vw);
             font-family: Monoton, cursive;
             color: rgb(135, 137, 139);
           "
@@ -50,12 +50,10 @@
         >
           <img
             src="./pics/icon.png"
-            style="margin-top: 3%"
-            width="27"
-            height="27"
+            style="margin-top: 2.1%; width: 1.2em; height: 1.2em"
             class="d-inline-block align-text-top"
           />
-          &nbsp;SALCEDO
+          SALCEDO
         </a>
         <button
           class="navbar-toggler"
@@ -132,12 +130,12 @@
               class="form-control me-2"
               type="search"
               placeholder="Search"
-              style="font-size: 1.3vw"
+              style="font-size: 1vw"
               aria-label="Search"
             />
             <button
               class="btn btn-outline-dark"
-              style="font-size: 1.3vw"
+              style="font-size: 1vw"
               type="submit"
             >
               Go
@@ -146,9 +144,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- horizontal image -->
-    <img id="horizontal-image" src="./pics/pink.jpg" />
 
     <!-- Home -->
     <section class="home">
@@ -182,9 +177,9 @@
             full-stack
           </h1>
         </div>
-        <div>
-          <img id="portrait" src="./pics/main-pic.jpg" />
-        </div>
+
+        <!-- Retrato -->
+        <img class="portrait" src="./pics/main-pic.jpg" />
       </div>
       <br />
       <br />
@@ -227,23 +222,7 @@
       <div></div>
       <div></div>
 
-      <!-- attribute style-x is style but commented out-->
-      <div
-        class="iframe-container"
-        id="video"
-        style_x="
-          display: flex;
-          --s: 0.5vw; /* control the size */
-          padding: var(--s);
-          border: calc(2 * var(--s)) solid #0000;
-          outline-offset: calc(-1 * var(--s));
-          background: conic-gradient(
-            from 90deg at 0.5px 0.5px,
-            #0000 25%,
-            #000 0
-          );
-        "
-      >
+      <div class="iframe-container" id="video">
         >
         <iframe
           width="650"
@@ -290,8 +269,8 @@
           >
             Los siguientes son algunos de los proyectos que realicé en el marco
             de mi certificación como programador full-stack con MIT/xPRO. Si
-            quieres conocer más proyectos de mi autoría, puedes dirigirte a mi
-            cuenta en
+            quieres conocer más proyectos de mi autoría, te invito a que cheques
+            mi cuenta en
             <a href="https://www.github.com/JavierGSS" target="_blank">GitHub</a
             >:
           </p>
@@ -330,8 +309,8 @@
               class="card-text text-center bg-opacity-10"
               style="font-family: Dosis, sans-serif; font-size: 1vw"
             >
-              Tú decides cuántos PacMen circularán aleatoriamente alrededor de
-              tu pantalla.<br /><br />
+              Tú decides cuántos PacMen circulan aleatoriamente alrededor de tu
+              pantalla.<br /><br />
               <a
                 target="_blank"
                 href="https://github.com/JavierGSS/PacMen-Exercise"
@@ -370,8 +349,8 @@
               class="card-text text-center bg-opacity-10"
               style="font-family: Dosis, sans-serif; font-size: 1vw"
             >
-              Trumpty Dumpty no te quita la mirada de encima. Cuídate del mal de
-              ojo &#128064;! <br /><br />
+              Trumpty Dumpty no te quita la mirada de encima. Pero cuídate del
+              mal de ojo &#128064;! <br /><br />
               <a
                 target="_blank"
                 href="https://github.com/JavierGSS/Eye-exercise"
@@ -458,13 +437,105 @@
                 display: block;
               "
             >
-              Carrito de compras creado con React y Bootstrap. Uso inmoderado de
-              useState.
+              Carrito de compras creado con React, Bootstrap y Strapi. Uso
+              inmoderado de useState.
               <br />
               <br />
               <a
                 target="_blank"
-                href="https://github.com/JavierGSS/react-shopping-cart"
+                href="https://github.com/JavierGSS/react-strapi-shopping-cart/tree/main/dummy-app3"
+                style="display: block; text-align: center"
+                ><strong>Repo</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-success p-2 text-dark bg-opacity-10">
+          <img
+            class="card-img-top"
+            src="pics/piggy.png"
+            height="auto"
+            style="
+              content: '';
+              border: solid 0.5px rgb(163, 169, 175);
+              object-fit: scale-down;
+            "
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <br />
+            <h3
+              style="
+                text-align: center;
+                height: auto;
+                font-family: Dosis, sans-serif;
+                font-size: 2vw;
+              "
+            >
+              <strong>Simple ATM</strong>
+            </h3>
+            <p
+              class="card-text text-center bg-opacity-10"
+              style="
+                font-family: Dosis, sans-serif;
+                font-size: 1vw;
+                display: block;
+              "
+            >
+              Cajero automático creado con React. Posee funcionalidades de
+              retiro y depósito.
+              <br />
+              <br />
+              <a
+                target="_blank"
+                href="https://github.com/JavierGSS/ATM-V.2"
+                style="display: block; text-align: center"
+                ><strong>Repo</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-success p-2 text-dark bg-opacity-10">
+          <img
+            class="card-img-top"
+            src="pics/tictac.png"
+            height="auto"
+            style="
+              content: '';
+              border: solid 0.5px rgb(163, 169, 175);
+              object-fit: scale-down;
+            "
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <br />
+            <h3
+              style="
+                text-align: center;
+                height: auto;
+                font-family: Dosis, sans-serif;
+                font-size: 2vw;
+              "
+            >
+              <strong>Tic Tac Toe with React</strong>
+            </h3>
+            <p
+              class="card-text text-center bg-opacity-10"
+              style="
+                font-family: Dosis, sans-serif;
+                font-size: 1vw;
+                display: block;
+              "
+            >
+              Juego de gato realizado con React. Uso inmoderado de useState y de
+              funciones callback.
+              <br />
+              <br />
+              <a
+                target="_blank"
+                href="https://github.com/JavierGSS/MIT/tree/main/Week%2016"
                 style="display: block; text-align: center"
                 ><strong>Repo</strong></a
               >
