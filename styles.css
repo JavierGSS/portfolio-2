@@ -108,9 +108,40 @@ body {
   background-image: url("./pics/about-me.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
-  /* las siguientes 3 reglas controlan el escalamiento del iframe pero entran en conflicto con el marco art déco definido en #portrait */
 }
+
+.bio {
+  text-anchor: inherit;
+}
+
+.bio a {
+  color: #5f7e69;
+  position: relative;
+  text-decoration: none;
+}
+
+.bio a:visited {
+  color: rgb(204, 154, 191);
+}
+
+/* anchor effect */
+.bio a::before {
+  background: hsl(45, 88%, 73%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.bio a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* las siguientes 3 reglas controlan el escalamiento del iframe pero entran en conflicto con el marco art déco definido en #portrait */
 .iframe-container {
   overflow: hidden;
   padding-top: 56.25%;
@@ -134,7 +165,6 @@ body {
 .projects-description {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-anchor: inherit;
 }
 
 .projects-description a {
