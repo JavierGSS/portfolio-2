@@ -131,13 +131,6 @@ body {
   padding-top: 75%;
 }
 
-.neonText {
-  color: #b6b2b2;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(237, 240, 94), 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa,
-    0 0 151px #0fa;
-}
-
 .projects-description {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -222,4 +215,8 @@ footer {
 
 .a-footer {
   color: rgb(86, 87, 88);
+}
+
+.a-footer:visited {
+  color: rgb(204, 154, 191);
 }
