@@ -113,6 +113,7 @@ body {
 
 .bio {
   text-anchor: inherit;
+  font-size: 1.5vw;
 }
 
 .bio a {
