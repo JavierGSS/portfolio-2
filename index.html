@@ -69,7 +69,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about-me">Bio</a>
@@ -170,57 +170,63 @@
     </section>
 
     <!-- About me -->
-    <section class="about-me" id="about-me">
-      <div></div>
-      <div
-        align="justify"
-        style="
-          font-family: Dosis, sans-serif;
-          font-size: 1.4vw;
-          color: rgb(86, 87, 88);
-          padding-top: 2%;
-          margin-top: 4vw;
-          margin-bottom: 3vw;
-        "
-      >
+    <section>
+      <div class="about-me" id="about-me">
+        <div></div>
         <div
-          align="center"
-          style="border-bottom: dotted; margin-bottom: 1vw; font-size: 3vw"
+          align="justify"
+          style="
+            font-family: Dosis, sans-serif;
+            font-size: 1.4vw;
+            color: rgb(86, 87, 88);
+            padding-top: 2%;
+            margin-top: 4vw;
+            margin-bottom: 3vw;
+          "
         >
-          Bio
-        </div>
-        <br />
-        <div>
-          <p class="bio">
-            Soy un desarrollador full-stack con un background en filosofía y
-            lógica matemática. En 2024 obtuve mi certificación de MIT/xPRO como
-            programador especializado en el stack
-            <a href="https://www.mongodb.com/mern-stack" target="_blank">MERN</a
-            >. Actualmente desarrollo productos intuitivos que cifran un
-            beneficio para mis clientes y la comunidad de usuarixs de sus
-            servicios.
-          </p>
+          <div
+            align="center"
+            style="border-bottom: dotted; margin-bottom: 1vw; font-size: 3vw"
+          >
+            Bio
+          </div>
+          <br />
+          <div>
+            <p>
+              Soy un desarrollador full-stack con un background en filosofía y
+              lógica matemática. En 2024 obtuve mi certificación de MIT/xPRO
+              como programador especializado en el stack
+              <a
+                href="https://www.mongodb.com/mern-stack"
+                target="_blank"
+                style="z-index: 2"
+                >MERN</a
+              >. Actualmente desarrollo productos intuitivos que cifran un
+              beneficio para mis clientes y la comunidad de usuarixs de sus
+              servicios.
+            </p>
+          </div>
+          <div></div>
         </div>
         <div></div>
-      </div>
-      <div></div>
-      <div></div>
+        <div></div>
 
-      <div class="iframe-container" id="video">
-        >
-        <iframe
-          width="650"
-          height="350"
-          src="https://www.youtube.com/embed/zhFNJnv3DU4"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        <div class="iframe-container" id="video">
+          >
+          <iframe
+            width="650"
+            height="350"
+            src="https://www.youtube.com/embed/zhFNJnv3DU4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
         picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div></div>
+        <div style="margin-bottom: 5%"></div>
       </div>
-      <div></div>
-      <div style="margin-bottom: 5%"></div>
     </section>
 
     <!-- Projects -->
@@ -731,6 +737,7 @@
       </div>
     </footer>
 
+    <script src="./active-link.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

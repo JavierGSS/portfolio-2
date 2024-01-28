@@ -33,6 +33,24 @@ body {
   color: rgb(148, 151, 155);
 }
 
+.navbar-brand:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(113, 193, 220), 0 0 82px rgb(113, 193, 220),
+    0 0 92px rgb(113, 193, 220), 0 0 102px rgb(113, 193, 220);
+}
+
+.nav-item:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(113, 193, 220), 0 0 82px rgb(113, 193, 220),
+    0 0 92px rgb(113, 193, 220), 0 0 102px rgb(113, 193, 220);
+}
+
+.nav-link.active {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(113, 193, 220), 0 0 82px rgb(113, 193, 220),
+    0 0 92px rgb(113, 193, 220), 0 0 102px rgb(113, 193, 220);
+}
+
 .h1 {
   font-family: Titan One, cursive;
   padding-left: 2%;
@@ -105,29 +123,24 @@ body {
 }
 
 .about-me {
-  background-image: url("./pics/about-me.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 2%;
+  grid-template-rows: 1fr;
+  background-image: url("./pics/about-me.png");
 }
 
-.bio {
-  text-anchor: inherit;
-  font-size: 1.5vw;
-}
-
-.bio a {
+.about-me a {
   color: #5f7e69;
   position: relative;
   text-decoration: none;
 }
 
-.bio a:visited {
-  color: rgb(204, 154, 191);
+.about-me a:visited {
+  color: rgb(176, 110, 158);
 }
 
 /* anchor effect */
-.bio a::before {
+.about-me a::before {
   background: hsl(45, 88%, 73%);
   content: "";
   inset: 0;
@@ -138,7 +151,7 @@ body {
   z-index: -1;
 }
 
-.bio a:hover::before {
+.about-me a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
