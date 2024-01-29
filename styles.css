@@ -100,6 +100,8 @@ body {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   margin-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
   align-items: center;
   gap: 1rem;
 }
@@ -110,9 +112,9 @@ body {
   object-fit: contain;
   display: flex;
   align-items: center;
-  height: 77%;
-  width: 77%;
-  filter: blur(0.2px) sepia(55%);
+  height: 78%;
+  width: 80%;
+  filter: blur(0.2px) sepia(60%);
   margin-left: 8%;
   margin-top: 10%;
 }
