@@ -225,7 +225,7 @@ body {
 }
 
 footer {
-  margin-top: auto 0;
+  margin-top: 4vw;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   gap: 1%;
