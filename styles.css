@@ -223,7 +223,9 @@ body {
 }
 
 footer {
+  height: 2vw;
   margin-top: 4vw;
+  padding-top: 0.3vw;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   gap: 1%;
@@ -236,8 +238,8 @@ footer {
 }
 
 .fa {
-  font-size: 0.8vw;
-  width: 50px;
+  font-size: 1.2vw;
+  width: 1vw;
   text-align: center;
   text-decoration: none;
 }
@@ -252,26 +254,4 @@ footer {
 
 .a-footer:visited {
   color: rgb(204, 154, 191);
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 0;
-  top: -5px;
-  left: 105%;
 }
