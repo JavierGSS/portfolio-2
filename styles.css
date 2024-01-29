@@ -34,21 +34,15 @@ body {
 }
 
 .navbar-brand {
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(113, 193, 220), 0 0 82px rgb(113, 193, 220),
-    0 0 92px rgb(113, 193, 220), 0 0 102px rgb(113, 193, 220);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
 }
 
 .nav-item:hover {
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(113, 193, 220), 0 0 82px rgb(113, 193, 220),
-    0 0 92px rgb(113, 193, 220), 0 0 102px rgb(113, 193, 220);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
 }
 
 .nav-link.active {
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(113, 193, 220), 0 0 82px rgb(113, 193, 220),
-    0 0 92px rgb(113, 193, 220), 0 0 102px rgb(113, 193, 220);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
 }
 
 .h1 {
