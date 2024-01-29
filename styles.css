@@ -30,7 +30,7 @@ body {
   margin-left: 5%;
   margin-top: 2%;
   font-size: 3.8vw;
-  color: rgb(148, 151, 155);
+  color: rgb(103, 106, 110);
 }
 
 .navbar-brand {
@@ -110,11 +110,11 @@ body {
   object-fit: contain;
   display: flex;
   align-items: center;
-  height: 78%;
-  width: 78%;
+  height: 75%;
+  width: 75%;
   filter: blur(0.2px) sepia(55%);
-  margin-top: 10%;
   margin-left: 8%;
+  margin-top: 10%;
 }
 
 .about-me {
@@ -123,6 +123,7 @@ body {
   grid-template-rows: 1fr;
   background-image: url("./pics/about-me.png");
   padding-bottom: 4vh;
+  position: relative;
 }
 
 .about-me a {
