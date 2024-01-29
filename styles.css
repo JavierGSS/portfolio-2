@@ -110,9 +110,9 @@ body {
   object-fit: contain;
   display: flex;
   align-items: center;
-  height: 80%;
-  width: 80%;
-  filter: blur(0.5px) sepia(50%);
+  height: 83%;
+  width: 83%;
+  filter: blur(0.2px) sepia(55%);
   margin-top: 10%;
 }
 
