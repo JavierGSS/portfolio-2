@@ -112,7 +112,7 @@ body {
   align-items: center;
   height: 80%;
   width: 80%;
-  filter: blur(0.5px) sepia(35%);
+  filter: blur(0.5px) sepia(50%);
   margin-top: 10%;
 }
 
