@@ -33,7 +33,7 @@ body {
   color: rgb(148, 151, 155);
 }
 
-.navbar-brand:hover {
+.navbar-brand {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(113, 193, 220), 0 0 82px rgb(113, 193, 220),
     0 0 92px rgb(113, 193, 220), 0 0 102px rgb(113, 193, 220);
@@ -127,10 +127,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background-image: url("./pics/about-me.png");
+  padding-bottom: 4vh;
 }
 
 .about-me a {
-  color: #5f7e69;
+  color: #e06666;
   position: relative;
   text-decoration: none;
 }
@@ -182,6 +183,33 @@ body {
   grid-template-rows: 1fr;
 }
 
+.projects-description a {
+  color: #e06666;
+  position: relative;
+  text-decoration: none;
+}
+
+.projects-description a:visited {
+  color: rgb(176, 110, 158);
+}
+
+/* anchor effect */
+.projects-description a::before {
+  background: hsl(45, 88%, 73%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.projects-description a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* hover effect on cards */
 .p-3:hover {
   transform: scale(1.05);
@@ -226,4 +254,26 @@ footer {
 
 .a-footer:visited {
   color: rgb(204, 154, 191);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 0;
+  top: -5px;
+  left: 105%;
 }
