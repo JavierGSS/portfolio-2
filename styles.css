@@ -110,8 +110,8 @@ body {
   object-fit: contain;
   display: flex;
   align-items: center;
-  height: 75%;
-  width: 75%;
+  height: 77%;
+  width: 77%;
   filter: blur(0.2px) sepia(55%);
   margin-left: 8%;
   margin-top: 10%;
