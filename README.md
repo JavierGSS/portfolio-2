@@ -40,7 +40,7 @@
 
 ## :dart: About ##
 
-Personal portfolio featuring a short bio, my blog an my projects.
+Personal portfolio featuring a short bio, my blog and my projects.
 
 ## :sparkles: Features ##
 
