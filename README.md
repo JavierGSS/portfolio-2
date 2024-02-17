@@ -24,12 +24,6 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/JavierGSS/portfolio-2?color=56BEB8" /> -->
 </p>
 
-<!-- Status -->
-
-<h4 align="center"> 
-	🚧  Portfolio 2 🚀 Under construction...  🚧
-</h4> 
-
 <hr>
 
 <p align="center">
@@ -46,7 +40,7 @@
 
 ## :dart: About ##
 
-Personal portfolio featuring a short bio, my blog an my projects.
+Personal portfolio featuring a short bio, my blog and my projects.
 
 ## :sparkles: Features ##
 
